@@ -395,4 +395,4 @@ if __name__ == '__main__':
             f.write(blob)
         do_main(libpath)
     finally:
-        shutil.rmtree(temp_dir)
+        shutil.rmtree(temp_dir, ignore_errors=True)

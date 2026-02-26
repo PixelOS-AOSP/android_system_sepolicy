@@ -264,5 +264,5 @@ def do_main(work_dir):
 
 
 if __name__ == '__main__':
-    with tempfile.TemporaryDirectory() as temp_dir:
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as temp_dir:
         do_main(temp_dir)
